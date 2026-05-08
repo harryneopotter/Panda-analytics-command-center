@@ -1,6 +1,9 @@
 # History
 
 ## 2026-05-08
+- Follow-up mobile fix: removed custom pointer-up/skip-click tab handling and switched tabs through a single direct click handler.
+- This corrects the earlier touch-specific attempt below, which still left some mobile sessions over Tailscale unable to switch tabs reliably.
+- Files touched: app/page.tsx, HISTORY.md, ISSUES.md
 - Investigated mobile tab non-responsiveness reported over Tailscale-served dev URL and added touch-friendly tab interaction updates.
 - Updated top tab buttons to reduce text-selection interference on touch devices (`select-none`, `touch-manipulation`) and to switch tabs on touch pointer-up in addition to click handling.
 - Files touched: app/page.tsx, HISTORY.md, ISSUES.md

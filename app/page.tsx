@@ -755,7 +755,6 @@ export default function DoctorVisibilityDashboard() {
   const modalPanelRef = useRef<HTMLDivElement>(null);
   const modalCloseButtonRef = useRef<HTMLButtonElement>(null);
   const modalTriggerRef = useRef<HTMLElement | null>(null);
-  const skipNextTabClickRef = useRef(false);
 
   const closeMapModal = useCallback(() => {
     setSelectedMapNode(null);
@@ -882,27 +881,15 @@ export default function DoctorVisibilityDashboard() {
               <button
                 key={tab.id}
                 type="button"
-                onClick={() => {
-                  if (skipNextTabClickRef.current) {
-                    skipNextTabClickRef.current = false;
-                    return;
-                  }
-                  setActiveTab(tab.id);
-                }}
-                onPointerUp={(event) => {
-                  if (event.pointerType === "touch") {
-                    skipNextTabClickRef.current = true;
-                    setActiveTab(tab.id);
-                  }
-                }}
-                  className={`px-4 py-2 rounded-xl whitespace-nowrap transition-all touch-manipulation select-none ${
-                    activeTab === tab.id
-                      ? "bg-white text-black font-medium"
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-4 py-2 rounded-xl whitespace-nowrap transition-all touch-manipulation select-none ${
+                  activeTab === tab.id
+                    ? "bg-white text-black font-medium"
                       : "hover:bg-zinc-800 text-zinc-400"
-                  }`}
-                >
-                  {tab.label}
-                </button>
+                }`}
+              >
+                {tab.label}
+              </button>
               ))}
             </div>
           </div>
