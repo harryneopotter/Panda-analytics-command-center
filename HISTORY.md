@@ -1,5 +1,10 @@
 # History
 
+## 2026-05-08
+- Investigated mobile tab non-responsiveness reported over Tailscale-served dev URL and added touch-friendly tab interaction updates.
+- Updated top tab buttons to reduce text-selection interference on touch devices (`select-none`, `touch-manipulation`) and to switch tabs on touch pointer-up in addition to click handling.
+- Files touched: app/page.tsx, HISTORY.md, ISSUES.md
+
 ## 2026-05-05
 - Documented latest review findings in a dedicated file for tracking and handoff, including four issues across compliance-stage styling, risk-level styling, ranking-language copy, and original-platform rendering.
 - Expanded the same review document with an actionable fix plan and validation checklist (lint, typecheck, and manual UI checks) for the four reported issues.
