@@ -876,12 +876,18 @@ export default function DoctorVisibilityDashboard() {
 
         {/* Tabs */}
         <div className="border-t border-zinc-800 max-w-7xl mx-auto px-6 overflow-x-auto">
-          <div className="flex gap-1 py-3 text-sm">
+          <div className="flex gap-1 py-3 text-sm select-none">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
+                type="button"
                 onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2 rounded-xl whitespace-nowrap transition-all ${
+                onPointerUp={(event) => {
+                  if (event.pointerType === "touch") {
+                    setActiveTab(tab.id);
+                  }
+                }}
+                  className={`px-4 py-2 rounded-xl whitespace-nowrap transition-all touch-manipulation select-none ${
                     activeTab === tab.id
                       ? "bg-white text-black font-medium"
                       : "hover:bg-zinc-800 text-zinc-400"
