@@ -7,6 +7,7 @@
   - **Fix:** Added `suppressHydrationWarning` to `app/layout.tsx` and normalized `allowedDevOrigins` for the Tailscale origins.
   - **Outcome:** Tabs work again; hydration warning is suppressed for the browser-injected attribute.
 
+
 ## 2026-05-08
 
 - **Failure:** `npm run lint` failed initially with `sh: 1: eslint: not found`.
