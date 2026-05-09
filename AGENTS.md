@@ -62,6 +62,7 @@ If/when a test runner is added, prefer these patterns:
 - `app/` uses Next.js App Router.
 - `app/layout.tsx` is the root layout; global CSS is `app/globals.css`.
 - `app/page.tsx` is a client component (`'use client';`) and currently contains the full demo UI.
+- `app/AGENTS.md` contains app-local guidance for the large demo surface.
 - Path alias is configured: `@/*` maps to repo root via `tsconfig.json`.
 
 ## Product / Copy Constraints

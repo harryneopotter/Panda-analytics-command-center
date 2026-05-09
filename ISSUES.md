@@ -1,5 +1,13 @@
 # Issues Log
 
+## 2026-05-09
+
+- **Issue:** Waterfox on the Tailscale IP triggered a hydration mismatch warning and initially made the tabs feel inert.
+  - **Cause:** Browser-injected `data-nm-theme="dark"` on the root `<html>` element caused React hydration noise.
+  - **Fix:** Added `suppressHydrationWarning` to `app/layout.tsx` and normalized `allowedDevOrigins` for the Tailscale origins.
+  - **Outcome:** Tabs work again; hydration warning is suppressed for the browser-injected attribute.
+
+
 ## 2026-05-08
 
 - **Failure:** `npm run lint` failed initially with `sh: 1: eslint: not found`.

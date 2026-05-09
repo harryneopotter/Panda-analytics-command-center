@@ -1,5 +1,21 @@
 # History
 
+## 2026-05-09
+- Confirmed the Waterfox/Tailscale tab issue was a browser-injected hydration mismatch (`data-nm-theme="dark"` on `<html>`), then muted the warning with `suppressHydrationWarning` so the demo stays usable.
+- Files touched: app/layout.tsx, HISTORY.md
+
+## 2026-05-09
+- Added `suppressHydrationWarning` on the root `<html>` element to mute browser-injected theme attribute hydration noise in Waterfox.
+- Files touched: app/layout.tsx, HISTORY.md
+
+## 2026-05-09
+- Normalized the Next dev allowlist to the host/IP format Next expects for the Tailscale access points so dev HMR can load over the non-localhost origins.
+- Files touched: next.config.ts, HISTORY.md
+
+## 2026-05-09
+- Generated hierarchy guidance for the repo: refreshed the root AGENTS file with an app-local pointer, added `app/AGENS.md` for the large demo surface, and recorded the repo-wide place to look for prototype copy and metadata edits.
+- Files touched: AGENTS.md, app/AGENTS.md, HISTORY.md
+
 ## 2026-05-08
 - Follow-up mobile fix: removed custom pointer-up/skip-click tab handling and switched tabs through a single direct click handler.
 - This corrects the earlier touch-specific attempt below, which still left some mobile sessions over Tailscale unable to switch tabs reliably.
