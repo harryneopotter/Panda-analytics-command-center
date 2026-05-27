@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "instanceType": "client-dashboard-instance",
+  "projectSlug": "vaanaya-health",
+  "projectName": "Vaanaya Health",
+  "domainId": "consumer_health_children_nutrition",
+  "domainLabel": "Consumer Health / Children Nutrition",
+  "generatedAt": "2026-05-14T17:40:46.009Z",
+  "status": "ready-for-deploy",
+  "sourceManifest": "./manifest.json",
+  "dashboardRoute": "/projects/vaanaya-health",
+  "renderConfig": {
+    "labels": {
+      "focusNode": "Product / Topic",
+      "visibilityGap": "Demand Gap",
+      "deliverable": "Content Asset",
+      "competitor": "Benchmark Brand"
+    },
+    "enabledSections": [
+      "overview",
+      "focusNodes",
+      "visibilitySignals",
+      "deliverables",
+      "competitors",
+      "monthlyReport"
+    ],
+    "tabs": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "intake",
+        "label": "Content Intake"
+      },
+      {
+        "id": "pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "signals",
+        "label": "Visibility Signals"
+      },
+      {
+        "id": "keywords",
+        "label": "Keyword Tracker"
+      },
+      {
+        "id": "competitors",
+        "label": "Competitor Snapshot"
+      },
+      {
+        "id": "review",
+        "label": "Compliance Review"
+      },
+      {
+        "id": "report",
+        "label": "Monthly Report"
+      },
+      {
+        "id": "research",
+        "label": "Research Summary"
+      }
+    ],
+    "guardrails": {
+      "enabled": true,
+      "notes": [
+        "No guaranteed health outcomes",
+        "No unsupported medical treatment claims",
+        "No before/after promises",
+        "Claims require substantiation before publishing",
+        "Doctor-style medical language should be avoided"
+      ],
+      "restrictedClaims": [
+        "Guaranteed health outcomes",
+        "Medical treatment claims without substantiation",
+        "Before/after performance promises",
+        "Unverified 90% improvement claims",
+        "90% test-group improvement claims without documented substantiation"
+      ],
+      "approvalRequired": true
+    }
+  },
+  "outputs": {
+    "manifest": "manifest.json",
+    "instance": "instance.json",
+    "summary": "README.md"
+  }
+}

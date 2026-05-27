@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:manifest": "node scripts/generate-project-manifest.mjs",
+    "validate:manifest": "node scripts/validate-project-manifest.mjs",
+    "generate:instance": "node scripts/generate-project-instance.mjs",
+    "bootstrap:project": "node scripts/bootstrap-client-project.mjs"
   },
   "dependencies": {
     "next": "16.2.4",

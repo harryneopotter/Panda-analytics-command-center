@@ -1,0 +1,711 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectContext": {
+    "domainId": "consumer_health_children_nutrition",
+    "domainLabel": "Consumer Health / Children Nutrition",
+    "generatedFor": "Vaanaya Health"
+  },
+  "client": {
+    "name": "Vaanaya Health",
+    "domain": "consumer_health / children_nutrition",
+    "location": {
+      "city": "Delhi",
+      "state": "India"
+    }
+  },
+  "dashboardConfig": {
+    "labels": {
+      "focusNode": "Product / Topic",
+      "visibilityGap": "Demand Gap",
+      "deliverable": "Content Asset",
+      "competitor": "Benchmark Brand"
+    },
+    "enabledSections": [
+      "overview",
+      "focusNodes",
+      "visibilitySignals",
+      "deliverables",
+      "competitors",
+      "monthlyReport"
+    ],
+    "tabs": [
+      {
+        "id": "overview",
+        "label": "Overview"
+      },
+      {
+        "id": "intake",
+        "label": "Content Intake"
+      },
+      {
+        "id": "pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "id": "signals",
+        "label": "Visibility Signals"
+      },
+      {
+        "id": "keywords",
+        "label": "Keyword Tracker"
+      },
+      {
+        "id": "competitors",
+        "label": "Competitor Snapshot"
+      },
+      {
+        "id": "review",
+        "label": "Compliance Review"
+      },
+      {
+        "id": "report",
+        "label": "Monthly Report"
+      },
+      {
+        "id": "research",
+        "label": "Research Summary"
+      }
+    ]
+  },
+  "overview": {
+    "executiveSummary": "Premium D2C children’s nutrition brand focused on clean-label trust, parent education, and repeat purchase growth.",
+    "monthlyGoal": "Strengthen parent trust, publish proof-led product education, and improve marketplace clarity.",
+    "workflowStatus": "Needs Attention",
+    "focusAreas": [
+      "Product education",
+      "Clean-label trust",
+      "Amazon listing optimization",
+      "Parent FAQ depth"
+    ]
+  },
+  "researchSummary": {
+    "sourcesReviewed": 11,
+    "competitorsReviewed": 6,
+    "keywordsReviewed": 5,
+    "regionsOrSegmentsChecked": 3,
+    "lastUpdated": "2026-05-14T17:40:45.924Z"
+  },
+  "focusNodes": [
+    {
+      "id": "fn-product-education",
+      "type": "product",
+      "label": "Smart Growth Mix",
+      "status": "Yellow",
+      "searchIntent": [
+        "kids nutrition powder",
+        "clean label nutrition for kids",
+        "children nutrition drink"
+      ],
+      "currentGap": "Needs clearer explanation of ingredients, usage, and parent trust signals.",
+      "recommendedAction": "Create ingredient explainer, usage FAQ, and parent education carousel.",
+      "recommendedPlatforms": [
+        "Website FAQ",
+        "Instagram",
+        "Amazon listing"
+      ],
+      "priority": "High"
+    },
+    {
+      "id": "fn-clean-label",
+      "type": "content_pillar",
+      "label": "Clean-label trust",
+      "status": "Green",
+      "searchIntent": [
+        "no fillers no chemicals",
+        "clean label nutrition for children",
+        "natural nutrition drink"
+      ],
+      "currentGap": "Brand trust is strong conceptually but needs clearer substantiation and repeated proof points.",
+      "recommendedAction": "Build a proof-led content pillar around certification, ingredients, and testing.",
+      "recommendedPlatforms": [
+        "Instagram",
+        "Website FAQ",
+        "Email"
+      ],
+      "priority": "High"
+    },
+    {
+      "id": "fn-marketplace",
+      "type": "platform",
+      "label": "Amazon listings",
+      "status": "Yellow",
+      "searchIntent": [
+        "buy kids nutrition online",
+        "child nutrition supplement amazon"
+      ],
+      "currentGap": "Marketplace copy should be strengthened to answer parent concerns quickly.",
+      "recommendedAction": "Refresh titles, bullets, A+ content, and FAQs for trust and conversion.",
+      "recommendedPlatforms": [
+        "Amazon",
+        "Website",
+        "Email"
+      ],
+      "priority": "High"
+    },
+    {
+      "id": "fn-parent-faq",
+      "type": "audience",
+      "label": "Parent FAQ",
+      "status": "Blue",
+      "searchIntent": [
+        "how to choose kids nutrition",
+        "is kids supplement safe",
+        "what to check on labels for children"
+      ],
+      "currentGap": "High-intent parent questions are not yet covered with enough educational depth.",
+      "recommendedAction": "Create a parent FAQ hub and comparison guide for label literacy.",
+      "recommendedPlatforms": [
+        "Website FAQ",
+        "Blog",
+        "Instagram"
+      ],
+      "priority": "High"
+    },
+    {
+      "id": "fn-subscription",
+      "type": "service",
+      "label": "Subscription retention",
+      "status": "Red",
+      "searchIntent": [
+        "kids nutrition subscription",
+        "repeat purchase nutrition product"
+      ],
+      "currentGap": "Recurring purchase messaging and nurture flow need clearer value framing.",
+      "recommendedAction": "Develop a subscription landing page and retention email series.",
+      "recommendedPlatforms": [
+        "Website",
+        "Email",
+        "WhatsApp"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "visibilitySignals": {
+    "summary": "Strong clean-label positioning and founder story; weaker category awareness versus heritage brands.",
+    "strongSignals": [
+      "Clean-label certification and ingredient transparency",
+      "Founder-led trust story",
+      "Premium brand positioning"
+    ],
+    "weakSignals": [
+      "Limited brand awareness versus heritage brands",
+      "Needs stronger parent FAQ depth",
+      "Marketplace copy can be clearer"
+    ],
+    "competitorPatterns": [
+      "Heritage brands win on recognition",
+      "Premium brands win on medical credibility",
+      "Vaanaya can win on clean-label trust and Indian ingredient story"
+    ],
+    "highFrequencyGaps": [
+      "Ingredient explanation",
+      "Parent decision support",
+      "Subscription value framing"
+    ]
+  },
+  "keywords": [
+    {
+      "keyword": "kids nutrition powder",
+      "category": "Product",
+      "regionOrSegment": "India",
+      "intentType": "Commercial",
+      "currentVisibility": "Partial",
+      "recommendedAction": "Create product explainer and comparison content",
+      "priority": "High"
+    },
+    {
+      "keyword": "clean label nutrition for kids",
+      "category": "Trust",
+      "regionOrSegment": "India",
+      "intentType": "Informational",
+      "currentVisibility": "Weak",
+      "recommendedAction": "Build certification and ingredient transparency content",
+      "priority": "High"
+    },
+    {
+      "keyword": "no added sugar kids drink",
+      "category": "Ingredient",
+      "regionOrSegment": "India",
+      "intentType": "Commercial",
+      "currentVisibility": "Partial",
+      "recommendedAction": "Publish sweetener and ingredient FAQ",
+      "priority": "High"
+    },
+    {
+      "keyword": "best nutrition for kids in India",
+      "category": "Category",
+      "regionOrSegment": "India",
+      "intentType": "Commercial",
+      "currentVisibility": "Weak",
+      "recommendedAction": "Create category comparison and parent decision guide",
+      "priority": "High"
+    },
+    {
+      "keyword": "kids supplement amazon",
+      "category": "Marketplace",
+      "regionOrSegment": "Amazon India",
+      "intentType": "Commercial",
+      "currentVisibility": "Partial",
+      "recommendedAction": "Strengthen marketplace listing and review-proof assets",
+      "priority": "Medium"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Horlicks",
+      "observedStrength": "Heritage brand recognition",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    },
+    {
+      "name": "Complan",
+      "observedStrength": "Heritage brand recognition",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    },
+    {
+      "name": "Boost",
+      "observedStrength": "Heritage brand recognition",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    },
+    {
+      "name": "Bournvita",
+      "observedStrength": "Heritage brand recognition",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    },
+    {
+      "name": "Pediasure",
+      "observedStrength": "Medical-grade positioning",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    },
+    {
+      "name": "Protinex",
+      "observedStrength": "Heritage brand recognition",
+      "channels": [
+        {
+          "name": "Website",
+          "status": "Strong",
+          "notes": "Recognized brand presence and high awareness"
+        },
+        {
+          "name": "Instagram",
+          "status": "Moderate",
+          "notes": "Social brand support and parent-facing content"
+        },
+        {
+          "name": "YouTube",
+          "status": "Moderate",
+          "notes": "Educational and awareness content"
+        },
+        {
+          "name": "Marketplace",
+          "status": "Strong",
+          "notes": "Retail and e-commerce distribution advantage"
+        }
+      ],
+      "contentGap": "Needs more proof-led, parent-friendly comparison content and clean-label explanation.",
+      "opportunity": "Differentiate with transparency, Indian superfoods, and founder-led trust building."
+    }
+  ],
+  "deliverables": [
+    {
+      "type": "FAQ",
+      "title": "Parent FAQ: How to choose a clean-label kids nutrition product",
+      "purpose": "Answer trust and label questions early",
+      "platforms": [
+        "Website",
+        "Instagram"
+      ],
+      "status": "Planned",
+      "linkedGap": "Parent FAQ",
+      "priority": "High"
+    },
+    {
+      "type": "BLOG_POST",
+      "title": "What does clean-label nutrition mean for children?",
+      "purpose": "Educate parents on ingredient transparency",
+      "platforms": [
+        "Website",
+        "Email"
+      ],
+      "status": "Planned",
+      "linkedGap": "Clean-label trust",
+      "priority": "High"
+    },
+    {
+      "type": "SOCIAL_POST",
+      "title": "Ingredient spotlight: ragi, ashwagandha, and brahmi",
+      "purpose": "Build proof-led awareness around formulation",
+      "platforms": [
+        "Instagram",
+        "WhatsApp"
+      ],
+      "status": "Planned",
+      "linkedGap": "Product education",
+      "priority": "High"
+    },
+    {
+      "type": "LANDING_PAGE",
+      "title": "Subscription plan and repeat purchase benefits",
+      "purpose": "Support retention and recurring revenue",
+      "platforms": [
+        "Website"
+      ],
+      "status": "Planned",
+      "linkedGap": "Subscription retention",
+      "priority": "Medium"
+    },
+    {
+      "type": "DIRECTORY_UPDATE",
+      "title": "Amazon listing refresh for Smart Growth Mix",
+      "purpose": "Improve marketplace clarity and conversion",
+      "platforms": [
+        "Amazon India"
+      ],
+      "status": "Planned",
+      "linkedGap": "Marketplace listings",
+      "priority": "High"
+    }
+  ],
+  "guardrails": {
+    "enabled": true,
+    "notes": [
+      "No guaranteed health outcomes",
+      "No unsupported medical treatment claims",
+      "No before/after promises",
+      "Claims require substantiation before publishing",
+      "Doctor-style medical language should be avoided"
+    ],
+    "restrictedClaims": [
+      "Guaranteed health outcomes",
+      "Medical treatment claims without substantiation",
+      "Before/after performance promises",
+      "Unverified 90% improvement claims",
+      "90% test-group improvement claims without documented substantiation"
+    ],
+    "approvalRequired": true
+  },
+  "clientInputsNeeded": [
+    {
+      "item": "Approved product fact sheet and ingredient list",
+      "neededBy": "Before claims review",
+      "impactIfDelayed": "Content cannot move to approval without substantiated facts"
+    },
+    {
+      "item": "Restricted claims and legal review notes",
+      "neededBy": "Before publishing",
+      "impactIfDelayed": "Marketplace and social copy must remain conservative"
+    },
+    {
+      "item": "Brand voice, tone, and visual rules",
+      "neededBy": "Before content production",
+      "impactIfDelayed": "Assets may not match brand expectations"
+    }
+  ],
+  "monthlyReport": {
+    "summary": "Sample monthly report structure for a children’s nutrition brand, with emphasis on trust, product education, and channel clarity.",
+    "whatWasDone": [
+      "Drafted product education assets",
+      "Outlined parent FAQ topics",
+      "Prepared marketplace improvement list"
+    ],
+    "whatChanged": [
+      "More structured trust messaging",
+      "Clearer differentiation from heritage brands",
+      "Sharper channel focus on website, Amazon, and Instagram"
+    ],
+    "nextMonthPlan": [
+      "Publish ingredient explainer series",
+      "Refresh Amazon product pages",
+      "Launch parent FAQ hub",
+      "Draft subscription retention messaging"
+    ],
+    "risksOrBlockers": [
+      "Unsupported health claims",
+      "Slow brand awareness growth",
+      "Price sensitivity in the premium segment"
+    ]
+  },
+  "notebooklmMeta": {
+    "used": true,
+    "sourceCount": 11,
+    "lastUpdated": "2026-05-14T17:40:45.924Z",
+    "gapsDetected": 9,
+    "highFrequencySignals": [
+      "clean-label trust",
+      "parent education",
+      "premium nutrition positioning"
+    ]
+  },
+  "generatedViews": {
+    "domain": {
+      "id": "consumer_health_children_nutrition",
+      "label": "Children's Nutrition Brand",
+      "audienceLabel": "Parents / caregivers",
+      "workflowStages": [
+        "Idea",
+        "Draft",
+        "Claims Review",
+        "Product Review",
+        "Approved",
+        "Scheduled",
+        "Published"
+      ],
+      "complianceMode": "claims review before publishing"
+    },
+    "brand": {
+      "founded": "2025",
+      "industry": "Retail Health and Personal Care Products",
+      "mission": "Vaanaya Health's mission centers on making \"every kid's life healthier and happier with optimal nutrition.\" The company believes that every child deserves tailored nutrition at every stage of their growth journey.",
+      "founders": [
+        {
+          "name": "Arjun Kohli",
+          "note": "IIT Delhi alumnus with background from the Department of  Management Studies. He documents the company's journey on Instagram as  ---  \"@themoderndayarjuna\" under the series \"Building @vanayahealth in 100  weeks.\""
+        },
+        {
+          "name": "Arnav Goel",
+          "note": "Commerce student with a passion for building businesses rather  than just studying them."
+        },
+        {
+          "name": "Shefali Khaneja",
+          "note": "Finance & Technology student at Christ University, Delhi  NCR.  The founding team brings together expertise in business, technology, and  finance, with a shared vision of creating cleaner, healthier nutrition options for  children."
+        }
+      ],
+      "productHighlights": [
+        {
+          "name": "Smart Growth Mix",
+          "purpose": "Daily nutrition for height, bone strength, and immunity",
+          "format": "Powder",
+          "status": "Available",
+          "ageRange": "3-12 years"
+        },
+        {
+          "name": "Smart Growth Mix 12+",
+          "purpose": "Nutrition support for older children and teens",
+          "format": "Powder",
+          "status": "Available",
+          "ageRange": "12+ years"
+        },
+        {
+          "name": "Smart Focus Mix",
+          "purpose": "Focus, calm energy, and digestive support",
+          "format": "Sachets",
+          "status": "Available",
+          "ageRange": "3-12 years"
+        },
+        {
+          "name": "Multivitamin Gummies",
+          "purpose": "Daily vitamins for kids",
+          "format": "Gummies",
+          "status": "Available",
+          "ageRange": "3-12 years"
+        }
+      ],
+      "differentiators": [
+        "Clean Label Certification  : Vaanaya Health is certified by Eat Real Club,  emphasizing \"No Fillers, No Chemicals\" Vaanaya Health1",
+        "Natural Sweetening : Uses natural sweeteners like dates or jaggery powder  instead of refined sugar; gummies have no added sugar",
+        "Ancient Indian Wisdom : Products incorporate traditional Indian superfoods  like Ragi, Ashwagandha, Brahmi, and MCT Oil",
+        "Vegetarian Formulations : Most products are vegetarian",
+        "Rigorous Testing : Every product goes through lab testing and real-world  validation with handpicked families. The company launches only when 90% of  their test group sees measurable improvements Vaanaya Health1"
+      ],
+      "pricing": [
+        "Smart Growth Mix | ₹999 | ₹799-₹899 | 10-20%",
+        "Smart Growth Mix 12+ | ₹999 | ₹899 | 10%",
+        "Smart Focus Mix | - | - | -"
+      ],
+      "channels": [
+        "Own Website",
+        "Amazon India",
+        "Instagram",
+        "WhatsApp",
+        "Email"
+      ]
+    },
+    "market": {
+      "marketStats": [
+        "Indian nutritional supplements market valued at USD 42.97 billion in 2024",
+        "Indian pediatric nutritional supplements market projected at USD 13.1 billion by 2034",
+        "Children's nutrition is moving toward clean-label, child-friendly formats, and e-commerce"
+      ],
+      "strengths": [
+        "Clean Label Positioning : Eat Real certification and emphasis on natural  ingredients appeals to health-conscious parents",
+        "Cultural Relevance : Use of traditional Indian superfoods (Ragi, Ashwagandha,  Brahmi) creates emotional connection",
+        "Strong Founder Story : IIT Delhi founder with documented journey builds trust  and transparency",
+        "Quality Focus : Rigorous testing with 90% success rate before product launch",
+        "D2C Model : Direct relationship with customers enables better margins and  feedback loops"
+      ],
+      "weaknesses": [
+        "Brand Recognition : New entrant (founded 2025) with limited brand  awareness compared to decades-old competitors  ---",
+        "Limited Distribution : D2C focus limits reach compared to traditional retail  presence of competitors",
+        "Premium Pricing : Higher price point may limit market penetration in price  sensitive segments",
+        "Small Team : 2-10 employees may limit operational scalability and marketing  capabilities"
+      ],
+      "opportunities": [
+        "Market Growth : Indian pediatric nutritional supplements market projected to  grow at 8.66% CAGR",
+        "Clean Label Trend : Increasing consumer demand for natural, additive-free  products",
+        "E-commerce Expansion : Growing digital adoption in tier-2 and tier-3 cities",
+        "Product Expansion : Opportunity to extend into adjacent categories (infant  nutrition, teen nutrition)",
+        "Subscription Model : Recurring revenue through subscription plans can  improve unit economics"
+      ],
+      "threats": [
+        "Intense Competition : Established brands with deep pockets (GSK, Abbott,  Heinz) can launch similar products",
+        "Price Sensitivity : Indian market remains highly price-sensitive; premium  positioning may limit growth",
+        "Regulatory Changes : Potential stricter regulations on health claims and  nutritional supplements",
+        "Economic Downturn : Premium products face demand pressure during  economic slowdowns",
+        "Counterfeit Products : Risk of imitation products in the unorganized sector  ---"
+      ],
+      "recommendations": [
+        "Expand Distribution : Consider selective offline presence in premium retail  channels (organic stores, high-end supermarkets) to complement D2C  strategy",
+        "Build Brand Authority : Invest in educational content marketing around child  nutrition, clean label benefits, and the science behind ingredients",
+        "Leverage Community : Develop a strong parent community through  WhatsApp groups, webinars, and loyalty programs to drive word-of-mouth",
+        "Product Line Extension : Consider expanding into:",
+        "Infant nutrition (0-3 years)",
+        "Teen nutrition (13-18 years)  ---",
+        "Specialized variants (immunity-focused, sports nutrition)",
+        "Strategic Partnerships : Collaborate with pediatricians and nutritionists to  build credibility and drive recommendations",
+        "Subscription Optimization : Enhance subscription offerings with personalized  nutrition plans and regular health check-ins to improve retention"
+      ],
+      "competitorNames": [
+        "Horlicks",
+        "Complan",
+        "Boost",
+        "Bournvita",
+        "Pediasure",
+        "Protinex"
+      ]
+    },
+    "product": {
+      "names": [
+        "Smart Growth Mix",
+        "Smart Focus Mix",
+        "Multivitamin Gummies",
+        "Bone Strength Gummies",
+        "Eye Care Gummies",
+        "Smart Growth Mix 12+"
+      ],
+      "productFlavor": "Chocolate",
+      "targetAge": "3-12 years and 12+ years"
+    },
+    "marketing": {
+      "socialStrategyBullets": [
+        "Content Themes : Parenting tips, product education, behind-the-scenes  content, customer testimonials",
+        "Engagement Tactics : Reels showcasing product usage, founder journey  documentation, user-generated content campaigns",
+        "Influencer Collaborations  : Partnerships with parenting influencers and  mommy bloggers",
+        "Community Building : Encouraging customers to share experiences and tag  the brand"
+      ]
+    }
+  }
+}

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Visibility Dashboard | Sample Proposal",
-  description: "Doctor-authored educational content visibility system — Demo",
+  title: "Client Dashboard Generator | Sample Proposal",
+  description: "Manifest-driven client dashboard generator — Demo",
   icons: {
     icon: "/favicon.ico",
   },

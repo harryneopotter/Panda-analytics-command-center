@@ -64,6 +64,14 @@ If/when a test runner is added, prefer these patterns:
 - `app/page.tsx` is a client component (`'use client';`) and currently contains the full demo UI.
 - Path alias is configured: `@/*` maps to repo root via `tsconfig.json`.
 
+## Repo Orientation Docs
+
+- `CODEBASE_OVERVIEW.md` is the concise map for future work. Start there for file roles, architecture notes, and operating constraints.
+- `README.md` covers the product pitch, demo scope, and the main user-facing tabs.
+- `docs/project-manifest-pipeline.md` explains the research-doc to manifest generation flow.
+- `HISTORY.md` is the dated task log. Append a brief entry for every task before marking it complete.
+- `ISSUES.md` records environment failures, repo blockers, and the next fallback to try.
+
 ## Product / Copy Constraints
 
 - This UI is a client-facing pitch/prototype that demonstrates the intended post-onboarding workflow; it is not a live product.

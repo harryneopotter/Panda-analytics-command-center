@@ -1,144 +1,137 @@
-# Dr. Visibility Dashboard
+# Client Dashboard Generator
 
-**Client-facing prototype for a doctor-led educational visibility operating system.**
+This repository started life as a **single-client, doctor-led visibility dashboard** and was later refactored into a **reusable manifest-driven dashboard generator**.
 
-Built for Dr. UserA (urologist / uro-oncology / robotics / renal transplant) to demonstrate a structured operating workflow for weekly video capture, multi-platform repurposing, compliance-aware review, and regional visibility tracking.
+The original prototype was built to show one client how an educational content workflow could work end to end:
 
-**Status:** Pre-contract demo (v0.1). All data is fictional/sample. Not production.
+- capture input
+- shape content
+- review compliance
+- track visibility
+- report progress
 
----
+That first version was useful, but it was still tied to one domain and one operating model. The current repo keeps that origin story, but now supports a more general flow:
 
-## Core Positioning
+- take a client research brief
+- normalize it into a project manifest
+- generate a client-specific dashboard instance
+- render that instance from the manifest
+- hand it off for deployment
 
-> Doctor-authored education, professionally packaged, compliance-reviewed, consistently published, and visibility-tracked.
+## What This Repo Is Now
 
-The dashboard shows how the doctor’s original medical voice stays central while the service handles planning, packaging, consistency, platform adaptation, compliance review, and visibility tracking — without risky medical advertising or ranking guarantees.
+This is not a live backend product. It is a **client delivery tool** for generating branded dashboard instances from research and schema input.
 
----
+The current shape is:
 
-## Features (9 Tabs)
+- a shared dashboard engine
+- a schema for project manifests
+- a generator that converts research into a manifest
+- a validator for the manifest shape
+- a generated client instance package
+- a viewer for generated instances
 
-| Tab | Purpose |
-|-----|---------|
-| **Overview** | Executive summary: workflow status, content system, compliance mode, focus areas, monthly plan |
-| **Weekly Capture** | Upcoming shoot + topic list. Shows doctor inputs needed, status, risk levels, and capture flow |
-| **Content Pipeline** | Operational table (topic, category, stage, outputs, doctor approval gate, compliance, next action) |
-| **Reel Repurposing** | Sample “source clip → variants” cards (YT Shorts / Website FAQ / GBP education post) with compliance notes |
-| **Compliance Review** | Checklist + flagged items with risk level, specific flags, and suggested fixes |
-| **Visibility Map** | Interactive regional grid. Click city cards for gaps, suggested education topics, and platform recommendations |
-| **Keyword Tracker** | Education queries turned into content priorities (sample signals, not promises) |
-| **Competitor Snapshot** | Non-accusatory market scan (illustrative) focusing on tone/compliance patterns to avoid |
-| **Monthly Report** | Output summary + sample signal narrative + next-month plan + required doctor inputs |
+## How It Evolved
 
-**Global elements:**
-- Demo banner: “Prototype dashboard — Demo data | Publishing requires compliance review + doctor approval”
-- Calm medical-professional theme with status accents
+### 1. Single client prototype
 
----
+The app began as a doctor-focused dashboard prototype. The goal was to prove the operating model for one client and one workflow.
 
-## Tech Stack
+### 2. Structured schema
 
-- Next.js 16 (App Router)
-- React 19 + TypeScript
-- Tailwind CSS 4
-- No external map library (CSS grid + interactive divs for demo speed)
-- Zero backend / API calls — fully static demo data
+Once the workflow became clearer, the dashboard data was moved toward a manifest schema so the UI could be driven by data instead of hardcoded copy.
 
----
+### 3. Reusable generator
 
-## Getting Started
+The repo then gained a lightweight pipeline that turns a client research document into:
+
+- a normalized manifest
+- a validated instance package
+- a deployable client-specific dashboard
+
+### 4. Reusable client delivery
+
+The long-term direction is not “one dashboard for everyone.” It is:
+
+- one shared engine
+- one generated instance per client
+- one consistent workflow for each project
+
+## Example
+
+The repo includes an example client instance for **Vaanaya Health**, generated from a market research brief.
+
+That example demonstrates the current flow:
+
+- research brief in
+- manifest out
+- instance package out
+- dashboard rendered from the manifest
+
+## Repository Layout
+
+- `app/` contains the Next.js App Router pages.
+- `app/page.tsx` is the original prototype dashboard.
+- `app/instances/` renders generated client instances.
+- `components/instance-dashboard/` contains the manifest-driven tabbed dashboard UI.
+- `docs/project-manifest.schema.json` defines the manifest shape.
+- `docs/project-manifest-pipeline.md` describes the research -> manifest -> instance flow.
+- `scripts/` contains the generator, validator, and bootstrap scripts.
+- `generated/` contains example manifest output.
+- `instances/` contains generated client instance packages.
+- `AGENTS.md` contains working instructions for future agent sessions.
+
+## Running Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000
+Open:
+
+- `http://localhost:3000/` for the original prototype dashboard
+- `http://localhost:3000/instances` for the generated instance index
+- `http://localhost:3000/instances/vaanaya-health` for the example client instance
 
 Useful checks:
 
 ```bash
-npm run build
 npm run lint
+npm run build
 npx tsc -p tsconfig.json --noEmit
 ```
 
----
+## Generating A Client Instance
 
-## Security Notes (npm audit)
+The pipeline is intentionally lightweight.
 
-This prototype pins framework deps (`next@16.x`). If `npm audit` reports a PostCSS advisory via Next’s dependency tree, prefer using npm `overrides` to bump `postcss` without downgrading Next.
+### One-step bootstrap
 
----
-
-## Map Data Schema & Population
-
-The Visibility Map uses a hardcoded `mapNodes` array in `app/page.tsx` (`demoData.mapNodes`).
-
-### Required Fields per Node
-
-```ts
-type MapNode = {
-  id?: string;
-  city: string;
-  state: string;
-  status: "Green" | "Yellow" | "Red" | "Blue";
-  searchIntent: string[]; // example patient search queries
-  currentGap: string; // qualitative assessment
-  suggestedContent: string; // specific video/FAQ topic
-  recommendedPlatforms: string[]; // IG Reel | YT Short | Website FAQ | GBP Post
-  priority: "Low" | "Medium" | "High";
-};
+```bash
+node scripts/bootstrap-client-project.mjs --input "D:\Downloads\Market research on Vaanaya Health.md" --output-dir instances\vaanaya-health
 ```
 
-### How to Populate with Real Data
+### What the pipeline does
 
-**Target geography:** Entire NCR + Haryana + Rajasthan + Uttar Pradesh + Bihar + adjacent states (no arbitrary radius).
+1. Reads the client research document
+2. Normalizes it into a manifest
+3. Validates the manifest against the schema
+4. Generates a client instance package
+5. Marks the instance as ready for deployment
 
-1. **Priority nodes to seed first** (high search volume + referral potential):
-   - **NCR core**: Gurugram, Delhi, Noida, Faridabad, Ghaziabad, Sonipat, Panipat, Rohtak, Meerut, Karnal, Hisar
-   - **Haryana**: Panipat (already in demo), Rohtak, Hisar, Karnal, Ambala
-   - **Rajasthan**: Jaipur, Jodhpur, Udaipur, Bikaner
-   - **Uttar Pradesh**: Lucknow, Kanpur, Varanasi, Agra, Prayagraj, Gorakhpur
-   - **Bihar**: Patna, Gaya, Muzaffarpur, Bhagalpur
+## Product Constraints
 
-2. **Data sources for production:**
-   - Google Search Console (impressions, clicks, top queries by city/region)
-   - Keyword research tools (search volume + competition for education queries)
-   - Neutral SERP reviews (top results per query; no accusations)
-   - Doctor content audit (what already has strong educational coverage)
+- Treat all metrics, signals, and rankings as demo/sample data unless they come from real connected sources.
+- Keep compliance review and approval gates explicit in the UI and copy.
+- Do not introduce ranking guarantees, testimonials, solicitation CTAs, or any implication of paid visibility.
+- Keep the client-facing output brandable, reusable, and domain-aware.
 
-3. **Status logic (example signal tiers, not promises):**
-   - Green = consistently strong signals on high-intent education queries + strong video/FAQ coverage
-   - Yellow = partial signals; needs more depth and distribution consistency
-   - Red = weak signals or dominated by large aggregators; prioritize foundational education assets
-   - Blue = clear demand signal with low/no doctor-led educational coverage
+## Current Status
 
-4. **Future upgrade path:**
-   - Replace grid with a real map (Leaflet + coordinates)
-   - Connect to Search Console / platform APIs once onboarded
-   - Add time-series trend views per region
+This repo is now both:
 
-**Current demo uses 16 nodes** spanning NCR + Haryana + Rajasthan + Uttar Pradesh + Bihar. All cities are labeled by state.
+- the original prototype dashboard, kept as the starting point
+- the reusable generator that turns client research into a dashboard instance
 
----
-
-## Demo Data Notes
-
-- All content, rankings/signals, and metrics are fictional and clearly labeled.
-- No patient data, no real hospital footage, no verified live rankings.
-- Compliance language follows an educational-only posture (no superlatives, no guarantees, no testimonials, no solicitation CTAs).
-- Doctor approval is shown as a required final gate.
-
----
-
-## Production Recommendations
-
-- Replace static demo data with a real database (e.g. Supabase / Postgres)
-- Add authentication (doctor + operator roles)
-- Integrate video upload + captioning + compliance review workflow
-- Connect platform analytics after onboarding and baseline collection
-
----
-
-**Built per PRD v0.1** — Doctor Visibility Dashboard prototype.
+That is the core story: it began as one dashboard for one client, then grew into a repeatable delivery tool.

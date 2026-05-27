@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/project-manifest.schema.json",
+  "title": "Project Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectContext",
+    "client",
+    "dashboardConfig",
+    "overview",
+    "researchSummary",
+    "focusNodes",
+    "visibilitySignals",
+    "keywords",
+    "competitors",
+    "deliverables",
+    "guardrails",
+    "clientInputsNeeded",
+    "monthlyReport",
+    "notebooklmMeta",
+    "generatedViews"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "string" },
+    "projectContext": {
+      "type": "object",
+      "required": ["domainId", "domainLabel", "generatedFor"],
+      "properties": {
+        "domainId": { "type": "string" },
+        "domainLabel": { "type": "string" },
+        "generatedFor": { "type": "string" }
+      }
+    },
+    "client": {
+      "type": "object",
+      "required": ["name", "domain", "location"],
+      "properties": {
+        "name": { "type": "string" },
+        "domain": { "type": "string" },
+        "location": {
+          "type": "object",
+          "required": ["city", "state"],
+          "properties": {
+            "city": { "type": "string" },
+            "state": { "type": "string" }
+          }
+        }
+      }
+    },
+    "dashboardConfig": {
+      "type": "object",
+      "required": ["labels", "enabledSections", "tabs"],
+      "properties": {
+        "labels": { "type": "object" },
+        "enabledSections": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tabs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "overview": { "type": "object" },
+    "researchSummary": { "type": "object" },
+    "focusNodes": { "type": "array" },
+    "visibilitySignals": { "type": "object" },
+    "keywords": { "type": "array" },
+    "competitors": { "type": "array" },
+    "deliverables": { "type": "array" },
+    "guardrails": { "type": "object" },
+    "clientInputsNeeded": { "type": "array" },
+    "monthlyReport": { "type": "object" },
+    "notebooklmMeta": { "type": "object" },
+    "generatedViews": { "type": "object" }
+  }
+}
